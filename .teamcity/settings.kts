@@ -33,6 +33,8 @@ project {
 object Build : BuildType({
     name = "Build"
 
+    artifactRules = "target/*.jar"
+
     params {
         param("env.nexus.login", "teamcity")
         password("env.nexus.password", "credentialsJSON:7d537077-4f41-4ba3-986b-d3e9cb9b0a83")
